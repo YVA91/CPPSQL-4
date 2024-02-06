@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.20)
+project(task4)
+set (PostgreSQL_ADDITIONAL_VERSIONS "16")
+add_executable(task4 main.cpp)
+add_subdirectory(C:/C++/lib/libpqxx libpqxx-build) 
+target_compile_features(task4 PRIVATE cxx_std_17)
+target_link_libraries(task4 pqxx) 
